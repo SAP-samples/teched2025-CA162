@@ -11,16 +11,25 @@ A Communication Arrangement consists of:
 
 Although it’s possible to configure each component separately, we find it much easier to create a **Communication Arrangement**, because it allows you to create the Communication System and Communication User directly within the same process.
 
+![Alt Selecting Communication Arrangement](exercises/ex1/images/select_comm_arrangement.jpg)
+
 As we have noted during preparation, the scenario we're using for today's workshop is `Communication User - Read`, technical name: `SAP_COM_0A05`, 
 ---
 
 ## Step 1: Create a Communication Arrangement
 
+Inside the Communication Arrangement Screen, select "New" to create a new arrangement. 
+
+![Alt text](exercises/ex1/images/define_comm_arrangement.jpg)
+
 As an example, we’ll use the scenario `SAP_COM_0A05`.  
 We search for it by typing `CA05`, the full identifier is `SAP_COM_0A05` (Communication Scenario: "COMMUNICATION USER READ").
 
+![Alt text](exercises/ex1/images/find_predefined_comm_arrangement.jpg)
+
 Once selected, we click **Create** – this opens a new screen.
 
+![Alt text](exercises/ex1/images/overview_comm_arrangement.jpg)
 ---
 
 ## Step 2: Add a New Communication System

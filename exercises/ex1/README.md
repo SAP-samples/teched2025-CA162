@@ -1,44 +1,62 @@
-# Exercise 1 - Exercise 1 Description
 
-In this exercise, we will create...
+# Exercise 1: Setting Up the Connection Between S/4HANA and SAP Analytics Cloud (SAC)
 
-## Exercise 1.1 Sub Exercise 1 Description
+We’re setting up a connection between **S/4HANA**, the necessary **API**, and **SAP Analytics Cloud (SAC)**, where the data will ultimately be visualized. There are several approaches to this, but essentially, you create a **Communication Arrangement**.
 
-After completing these steps you will have created...
+A Communication Arrangement consists of:
 
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
+- A **Communication System**
+- A **Communication User**
+- And a **Communication Scenario** (predefined by SAP)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
+Although it’s possible to configure each component separately, we find it much easier to create a **Communication Arrangement**, because it allows you to create the Communication System and Communication User directly within the same process.
 
+As we have noted during preparation, the scenario we're using for today's workshop is `Communication User - Read`, technical name: `SAP_COM_0A05`, 
+---
 
+## Step 1: Create a Communication Arrangement
 
-## Exercise 1.2 Sub Exercise 2 Description
+As an example, we’ll use the scenario `SAP_COM_0A05`.  
+We search for it by typing `CA05`, the full identifier is `SAP_COM_0A05` (Communication Scenario: "COMMUNICATION USER READ").
 
-After completing these steps you will have...
+Once selected, we click **Create** – this opens a new screen.
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
+---
 
-```
+## Step 2: Add a New Communication System
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+We now create a new Communication System – we’ll call it:
+
+C0A05_Test
 
 
-## Summary
+In the next screen, we need to enter the **Hostname** of the SAC system.  
+We extract just the hostname (not the full URL) from the SAC URL and enter it here.
 
-You've now ...
+Also, for security purposes, we enable TLS (1.2 or 1.3), then **Save**.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+---
 
+## Step 3: Create a Communication User
+
+Now, we create a new Communication User.  
+In this demo system, we use **Username and Password** authentication (since we're not connected to the Idnetity Provider). This is not ideal for production systems – for security, certificates would be recommended.
+
+We create a new user:
+
+C0A05_Test
+
+
+We let the system suggest a secure password.  
+Important: we **save the password**, because we’ll need it again later.
+
+We don’t need to fill in other fields. If we were to use them, certificates can be uploaded here, but we skip this and click **Create**.
+
+After this, we are lead back to the previous screen, the user we just created is now pre-filled. We confirm with OK, which assigns this user as the one for the Communication System (Unboard Communication User).
+
+
+---
+
+## Step 4: Save the Communication Arrangement
+
+Check if all information you need is entered into the respective fields. Then save the Communication Arrangement. The Communication Arrangement is now active and provides a way to connect other systems to our SAP S/4HANA Cloud Public Edition System with the credentials and for the hostname in the newly created communication arrangement. 

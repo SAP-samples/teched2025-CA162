@@ -2,15 +2,16 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2025 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2025 session called CA162 - Practical security and compliance tactics for SAP Business Suite.  
 
 ## Overview
 
-This session introduces attendees to...
+In this workshop, we will take a look at the security relevant APIs and integrate them into SAP Analytics Cloud (SAC) for a simple security use case: How many of our communcation arrangements in our SAP S/4HANA Cloud Public Edition instance have never been used. 
+Let's get to it.
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository are access to a SAP S/4HANA Cloud Public Edition System with a user with administrative rights, as well as access to an SAC system. 
 
 ## Exercises
 

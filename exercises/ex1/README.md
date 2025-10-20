@@ -38,17 +38,22 @@ We now create a new Communication System – we’ll call it:
 
 C0A05_Test
 
+![Alt text](images/new_comm_system.jpg)
 
 In the next screen, we need to enter the **Hostname** of the SAC system.  
 We extract just the hostname (not the full URL) from the SAC URL and enter it here.
 
 Also, for security purposes, we enable TLS (1.2 or 1.3), then **Save**.
 
+![Alt text](images/host_tls_comm_system.jpg)
 ---
 
 ## Step 3: Create a Communication User
 
 Now, we create a new Communication User.  
+
+![Alt text](images/new_user_comm_system.jpg)
+
 In this demo system, we use **Username and Password** authentication (since we're not connected to the Idnetity Provider). This is not ideal for production systems – for security, certificates would be recommended.
 
 We create a new user:
@@ -58,6 +63,8 @@ C0A05_Test
 
 We let the system suggest a secure password.  
 Important: we **save the password**, because we’ll need it again later.
+
+![Alt text](exercises/ex1/images/save_user_pwd_comm_system.jpg)
 
 We don’t need to fill in other fields. If we were to use them, certificates can be uploaded here, but we skip this and click **Create**.
 

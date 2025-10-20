@@ -1,26 +1,27 @@
-# Level 1 Heading
+The very first thing we need to do is make a plan. In other words, what are the steps we have to take to find the anwer to our question. There are a few technical steps we have to do, but also some conceptual thoughts. Here's how it could be broken down: 
 
-In this exercise, you will...
+# Technical Setup:
+From a technical pperspective a few things are important
+- identifying the correct communication scenario
+- establishing a connection between SAP S/4HANA Cloud Public Edition and SAC
+- Visualizing our data
 
-## Level 2 Heading
+# Conceptual Thoughts: 
 
-After completing these steps you will have....
+More important than setting up the connection and vizualising the data is asking yourself first, what data I actually need to solve my problem. The communication scenario we are using is a goood exmaple for this. When looking at the fields, there is no field which would give a direct answer, e.g. something like "when was the connection used last".
 
-1.	Click here.
-<br>![](/exercises/ex0/images/00_00_0010.png)
+To do this, the first thing you want to do is look at the API and the information it returns. For this, the easiest is to take a look at the Schema View of the API here: https://api.sap.com/api/CE_COMMUNICATIONUSER_0001/schema
 
-2.	Insert this code.
-``` abap
- DATA(params) = request->get_form_fields(  ).
- READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
+You will notice that the best field to use is based on the user: there is a field called LastLogonDateTime - if this is not populated, the user has never logged on and hence the communication arrangement most likely has never been used. 
 
-## Summary
+** note: of course, someone could have used the connection and changed the user afterwards, which is why you would want to integrate other fields, such as when was the connection last changed, in order to get the real picture, but for the sake of easiness we will stick to this one field for this exercise. 
 
-Now that you have ... 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+To visualize the unused connections, there are different options as well. For this exercise we will use a fairly simple visualization: comparing the number of users who have logged on with the number of users who have not logged on yet. 
+
+# The plan
+
+After this preparation, the steps we need to take are clear: 
+- Set up a connection to send the communication arrangements from SAP S/4HANA to SAC
+- visualize the number of users who have never logged on and compare them with the number of users who have logged on. 
+
+This is what we will do in the next couple of hours during this workshop. Let's get started.

@@ -3,7 +3,7 @@ The very first thing we need to do is make a plan. In other words, what are the 
 # Technical Setup:
 From a technical pperspective a few things are important
 - identifying the correct communication scenario
-- establishing a connection between SAP S/4HANA Cloud Public Edition and SAC
+- establishing a connection between SAP S/4HANA Cloud Public Edition and SAP Analytics Cloud (SAC)
 - Visualizing our data
 
 # Conceptual Thoughts: 
@@ -14,7 +14,7 @@ To do this, the first thing you want to do is look at the API and the informatio
 
 You will notice that the best field to use is based on the user: there is a field called LastLogonDateTime - if this is not populated, the user has never logged on and hence the communication arrangement most likely has never been used. 
 
-** note: of course, someone could have used the connection and changed the user afterwards, which is why you would want to integrate other fields, such as when was the connection last changed, in order to get the real picture, but for the sake of easiness we will stick to this one field for this exercise. 
+** Note: of course, someone could have used the connection and changed the user afterwards, which is why you would want to integrate other fields, such as when was the connection last changed, in order to get the real picture, but for the sake of easiness we will stick to this one field for this exercise. 
 
 To visualize the unused connections, there are different options as well. For this exercise we will use a fairly simple visualization: comparing the number of users who have logged on with the number of users who have not logged on yet. 
 
@@ -22,6 +22,13 @@ To visualize the unused connections, there are different options as well. For th
 
 After this preparation, the steps we need to take are clear: 
 - Set up a connection to send the communication arrangements from SAP S/4HANA to SAC
-- visualize the number of users who have never logged on and compare them with the number of users who have logged on. 
+- visualize the number of users who have never logged on and compare them with the number of users who have logged on
 
 This is what we will do in the next couple of hours during this workshop. Let's get started.
+
+# Accessing SAP S/4HANA Cloud Public Edition and SAC
+
+Now that we we understood what the scope of this hands-on session is, let us check the system access.
+
+1. Search for the internet browser on your computer and navigate to the SAP S/4HANA Cloud Public Edition instance: https://my426786.s4hana.cloud.sap
+2. Afterwards, also sign in to the SAC instance in a second tab: https://sacteched25.eu10.hcs.cloud.sap

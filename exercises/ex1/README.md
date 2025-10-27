@@ -70,12 +70,14 @@ After this, we are lead back to the previous screen, the user we just created is
 
 Check if all information you need is entered into the respective fields. Then save the Communication Arrangement. The Communication Arrangement is now active and provides a way to connect other systems to our SAP S/4HANA Cloud Public Edition System with the credentials and for the hostname in the newly created communication arrangement. 
 
+Once saved, note the Service URL/Service Interface in "inbound services" - you will need it in the next step. 
+
 ## Step 1.5: Add Connection in SAC
 In the SAC tenant, select "Connections" in the side navigation (second-to-last icon at the bottom left), then click "Add Connection" (plus icon).
 
 In the dialog, enter the following information (replace XY with your seat number):
 - Connection Name: S4_XY
-- Data Service URL: https://my426786-api.s4hana.cloud.sap/sap/opu/odata4/sap/aps_com_api_cusr_read/srvd_a2x/sap/communicationuser/0001/
+- Data Service URL: the Service URL/Service Interface you have noted in the previous step. 
 - User Name: SAC_XY_USER
 - Password: The password that was saved when the communication arrangement was created
 

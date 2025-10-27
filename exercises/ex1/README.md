@@ -72,6 +72,8 @@ Check if all information you need is entered into the respective fields. Then sa
 
 Once saved, note the Service URL/Service Interface in "inbound services" - you will need it in the next step. 
 
+![Saved Comm arrangement] (images/saved_comm_arrangemnet.png)
+
 ## Step 1.5: Add Connection in SAC
 In the SAC tenant, select "Connections" in the side navigation (second-to-last icon at the bottom left), then click "Add Connection" (plus icon).
 

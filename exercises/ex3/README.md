@@ -54,7 +54,7 @@ We now create two bars, with a measure for each bar. To this create a new measur
 - The binary metric is automatically applied.
 - This gives us the first bar: users who have never logged in.
 
- ![Alt text](images/cnever_loggedon_users.png) 
+ ![Alt text](images/never_loggedon_users.png) 
 
 #### Bar 2: Users Who Have Logged In
 

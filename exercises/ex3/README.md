@@ -48,7 +48,7 @@ We now create two bars, with a measure for each bar. To this create a new measur
 - The binary metric is automatically applied.
 - This gives us the first bar: users who have never logged in.
 
- ![Alt text](images/never_loggedon_users.png) 
+![Alt text](images/never_loggedon_users.png) 
 
 #### Bar 2: Users Who Have Logged In
 
@@ -59,7 +59,7 @@ We now create two bars, with a measure for each bar. To this create a new measur
   - The condition remains the same: `last log on date = 0`.
 - This gives us the second bar: users who **have** logged in.
 
-- ![Alt text](images/loggedon_users.png)
+![Alt text](images/loggedon_users.png)
 
 ### Step 3.2.3: Label the Metrics
 

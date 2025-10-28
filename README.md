@@ -23,7 +23,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - [Exercise 2: Importing data into a dataset in SAC](exercises/ex2/)
 
-- [Exercise 3: Visualizing unused communication scenarios (users) in SAC](exercises/ex2/)
+- [Exercise 3: Visualizing unused communication scenarios (users) in SAC](exercises/ex3/)
   
 
 ## Contributing

@@ -27,7 +27,51 @@ To prepare the data, we first need to create a helper measure.
 
 ---
 
-### Step 2.1: Create a Calculated Binary Measure
+### Step 1: Define a Binary Measure
 
-Under **Available**
+Since we are counting (1 or 0), we need a small helper measure—a calculated binary metric. We simply define a value of `1` as the binary metric.
 
+- Open the available objects and select calculations. A new window will open.
+
+
+
+- Create a calculated Measure and simply enter the value `1` in the 'Edit Formular' Editor.
+- Give the helper calculation a name and confirm with OK.
+  
+
+### Step 2: Create the Bar Chart
+
+We now create two bars, with a measure for each bar. To this create a new measure:
+
+#### Bar 1: Users Who Have Never Logged In
+
+- For this first bar, we need a calculation again.
+- We compute an **aggregation**: the **sum** of all **user IDs** for which the following condition holds:
+  - The user has a value indicating they have never logged in.
+  - This means the `last log on date` has a value of `null`.
+- The binary metric is automatically applied.
+- This gives us the first bar: users who have never logged in.
+
+  
+
+#### Bar 2: Users Who Have Logged In
+
+- This is also a calculation.
+- Again, we compute an aggregation: the sum of all user IDs.
+- This time, the condition is the opposite:
+  - The user does **not** have measure values for the condition.
+  - The condition remains the same: `last log on date = 0`.
+- This gives us the second bar: users who **have** logged in.
+
+### Step 3: Label the Metrics
+
+We should label the metrics appropriately:
+
+- Aggregation 1: `Users without log on date`
+- Aggregation 2: `Users with log on date`
+
+## Finalization
+
+- Save the analysis under the name `UnusedUsers99`. (Replace 99 with your seat number)
+
+- Save and finish.

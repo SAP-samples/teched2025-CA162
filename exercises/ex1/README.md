@@ -1,4 +1,3 @@
-
 # Exercise 1: Setting Up the Connection Between S/4HANA Cloud Public Edition and SAP Analytics Cloud (SAC)
 
 We’re setting up a connection between **S/4HANA**, the necessary **API**, and **SAP Analytics Cloud (SAC)**, where the data will ultimately be visualized. There are several approaches to this, but essentially, you create a **Communication Arrangement**.
@@ -10,22 +9,22 @@ A Communication Arrangement consists of:
 
 Although it’s possible to configure each component separately, we find it much easier to create a **Communication Arrangement**, because it allows you to create the Communication System and Communication User directly within the same process. You can find the corresponding app on the S/4HANA home page.
 
-![Alt Selecting Communication Arrangement](images/select_comm_arrangement.jpg)
+![Alt text](images/select_comm_arrangement.jpg)
 
 As we have noted during preparation, the scenario we're using for today's workshop is `Communication User - Read`, technical name: `SAP_COM_0A05`.
 
 ## Step 1.1: Create a Communication Arrangement
 
-Inside the Communication Arrangement Screen, select "New" to create a new arrangement. 
+Inside the Communication Arrangement screen, select "New" to create a new arrangement. 
 
 ![Alt text](images/define_comm_arrangement.jpg)
 
 As an example, we’ll use the scenario `SAP_COM_0A05`.  
-We search for it by typing `0A05`, the full identifier is `SAP_COM_0A05` (Communication Scenario: "COMMUNICATION USER READ").
+Search for it by typing `0A05`, the full identifier is `SAP_COM_0A05` (Communication Scenario: "COMMUNICATION USER READ").
 
 ![Alt text](images/find_predefined_comm_arrangement.jpg)
 
-Once selected, enter SAC_XY as Arrangement Name, where XY is your seat number.
+Once selected, enter **SAC_XY** as Arrangement Name, where *XY* is your seat number.
 
 ![Alt text](images/new_comm_arrangement.png)
 
@@ -35,7 +34,7 @@ Click on **Create** – this opens a new screen.
 
 We now create a new Communication System – we’ll call it:
 
-SAC_**XY**, where XY is your seat number.
+**SAC_XY**, where *XY* is your seat number.
 
 ![Alt text](images/new_comm_system.png)
 
@@ -52,10 +51,9 @@ Now, we create a new Communication User.
 
 ![Alt text](images/new_user_comm_system.png)
 
-In this demo system, we use **Username and Password** authentication. This is not ideal for production systems – for security, certificates would be recommended.
+In this demo system, we use **Username and Password** authentication. This is not ideal for production systems – for security, certificates would be recommended instead.
 
-We create a new user with the User Name SAC_XY_USER, where XY is your seat number.
-
+We create a new user with the User Name **SAC_XY_USER**, where *XY* is your seat number.
 
 We let the system suggest a secure password.  
 Important: we **save the password**, because we’ll need it again later. For example, copy the password into a text file.
@@ -74,10 +72,11 @@ Once saved, note the Service URL/Service Interface in "inbound services" - you w
 
 ![Alt text](images/saved_comm_arrangemnet.png)
 
-## Step 1.5: Add Connection in SAC
-In the SAC tenant, select "Connections" in the side navigation (second-to-last icon at the bottom left), then click "Add Connection" (plus icon).
+## Step 1.5: Add the Connection in SAC
 
-In the dialog, enter the following information (replace XY with your seat number):
+In the SAC tenant, select **Connections** in the side navigation (second-to-last icon at the bottom left), then click **Add Connection** (plus icon).
+
+In the dialog, enter the following information (replace *XY* with your seat number):
 - Connection Name: S4_XY
 - Data Service URL: the Service URL/Service Interface you have noted in the previous step. 
 - User Name: SAC_XY_USER

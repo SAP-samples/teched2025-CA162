@@ -1,24 +1,21 @@
 # Exercise 3: Visualizing unused communication scenarios (users) in SAC
 
-Now that we have saved the data from the "Communication User Read" API from the SAP S/4HANA Cloud Public Edition, we want to compare how many users have **never logged in** versus those who **have logged in** at least once.  
-Please Note: The actual question is: _Which communication scenarios have never been used?_ but for the purpose of this exercise, we will simplify the analysis, and assume a **1:1 relationship**:  
-Each **communication user** belongs to exactly **one communication scenario**.  
-Therefore, any communication user who has **never logged in** represents a **communication scenario that has never been used**.
+Now that we have saved the data from the "Communication User Read" API from the SAP S/4HANA Cloud Public Edition, we want to compare how many users have **never logged in** versus those who **have logged in** at least once.
 
----
+>Please note: The actual question is: _Which communication scenarios have never been used?_ But for the purpose of this exercise, we will simplify the analysis, and assume a **1:1 relationship**: Each **communication user** belongs to exactly **one communication scenario**.   Therefore, any communication user who has **never logged in** represents a **communication scenario that has never been used**.
 
-## Step 1: Create a Responsive Story
+## Step 3.1: Create a Responsive Story
 
 To make the story mobile-friendly, we create a **responsive story**.
 
 ![Alt text](images/create_story.png)
 
 We insert a **chart component**, drag it into the canvas, and select our pre-defined data source:  
-**Query: Communications Query 99** (Replace **99** with your seatnumber)
+**CommunicationUsersQueryXY** (replace *XY* with your seat number).
 
 ![Alt text](images/select_dataset.png)
 
-## Step 2: Define the Comparison Using a Bar Chart
+## Step 3.2: Define the Comparison Using a Bar Chart
 
 We want to compare two user groups using a **bar chart**:
 
@@ -27,9 +24,7 @@ We want to compare two user groups using a **bar chart**:
 
 To prepare the data, we first need to create a helper measure.
 
----
-
-### Step 1: Define a Binary Measure
+### Step 3.2.1: Define a Binary Measure
 
 Since we are counting (1 or 0), we need a small helper measure—a calculated binary metric. We simply define a value of `1` as the binary metric.
 
@@ -37,11 +32,10 @@ Since we are counting (1 or 0), we need a small helper measure—a calculated bi
 
 ![Alt text](images/helper_measure.png)
 
-- Create a calculated Measure and simply enter the value `1` in the 'Edit Formular' Editor.
+- Create a calculated Measure and simply enter the value `1` in the 'Edit Formula' Editor.
 - Give the helper calculation a name and confirm with OK.
-  
 
-### Step 2: Create the Bar Chart
+### Step 3.2.2: Create the Bar Chart
 
 We now create two bars, with a measure for each bar. To this create a new measure:
 
@@ -67,7 +61,7 @@ We now create two bars, with a measure for each bar. To this create a new measur
 
 - ![Alt text](images/loggedon_users.png)
 
-### Step 3: Label the Metrics
+### Step 3.2.3: Label the Metrics
 
 We should label the metrics appropriately:
 
@@ -78,6 +72,5 @@ We should label the metrics appropriately:
 
 ## Finalization
 
-- Save the analysis under the name `UnusedUsers99`. (Replace 99 with your seat number)
-
+- Save the analysis under the name **UnusedUsersXY** (replace *XY* with your seat number).
 - Save and finish.

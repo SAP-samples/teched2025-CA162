@@ -11,10 +11,12 @@ Therefore, any communication user who has **never logged in** represents a **com
 
 To make the story mobile-friendly, we create a **responsive story**.
 
+![Alt text](images/create_story.png)
+
 We insert a **chart component**, drag it into the canvas, and select our pre-defined data source:  
 **Query: Communications Query 99** (Replace **99** with your seatnumber)
 
----
+![Alt text](images/select_dataset.png)
 
 ## Step 2: Define the Comparison Using a Bar Chart
 
@@ -31,9 +33,9 @@ To prepare the data, we first need to create a helper measure.
 
 Since we are counting (1 or 0), we need a small helper measure—a calculated binary metric. We simply define a value of `1` as the binary metric.
 
-- Open the available objects and select calculations. A new window will open.
+- Open the available objects (in the "builder" window at the right, top right corner) and select calculations. A new window will open.
 
-
+![Alt text](images/helper_measure.png)
 
 - Create a calculated Measure and simply enter the value `1` in the 'Edit Formular' Editor.
 - Give the helper calculation a name and confirm with OK.
@@ -52,7 +54,7 @@ We now create two bars, with a measure for each bar. To this create a new measur
 - The binary metric is automatically applied.
 - This gives us the first bar: users who have never logged in.
 
-  
+ ![Alt text](images/cnever_loggedon_users.png) 
 
 #### Bar 2: Users Who Have Logged In
 
@@ -63,12 +65,16 @@ We now create two bars, with a measure for each bar. To this create a new measur
   - The condition remains the same: `last log on date = 0`.
 - This gives us the second bar: users who **have** logged in.
 
+- ![Alt text](images/loggedon_users.png)
+
 ### Step 3: Label the Metrics
 
 We should label the metrics appropriately:
 
 - Aggregation 1: `Users without log on date`
 - Aggregation 2: `Users with log on date`
+
+![Alt text](images/save_story.png)
 
 ## Finalization
 

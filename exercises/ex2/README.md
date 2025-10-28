@@ -1,8 +1,8 @@
-# Exercise 2: Importing data into a dataset and visualizing it in an SAC story
+# Exercise 2: Importing data into a dataset in SAC
 
 ## Step 2.1: Setup data source
 
-1. From the Datasets start page, click "From a Data Source" and select "OData Services". Select the exisitng Connection S4_XY in the dropdown, where XY is your seat number. Click **Next**.
+1. From the Datasets start page, click "From a Data Source" and select "OData Services". Select the existing Connection S4_XY in the dropdown, where XY is your seat number. Click **Next**.
 ![Alt text](images/create_dataset_1.png)
 2. Choose CommunicationUsersQuery**XY** as the Query Name (replace XY with your seat number) and select the CommunicationUsers table. Click **Next**.
 ![Alt text](images/create_dataset_2.png)

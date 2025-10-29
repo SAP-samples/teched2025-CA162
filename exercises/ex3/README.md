@@ -51,9 +51,9 @@ We now create two bars, with a measure for each bar. To this create a new measur
 
 - select **null** from the list of available members
 
-- This gives us the first bar: users who have never logged in.
-
 ![Alt text](images/never_loggedon_users.png) 
+
+- This gives us the first bar: users who have never logged in.
 
 #### Bar 2: Users Who Have Logged In
 

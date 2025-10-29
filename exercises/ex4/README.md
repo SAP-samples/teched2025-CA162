@@ -1,4 +1,4 @@
-# Analysis of Logon Failures
+# Exercise 4: Analysis of Logon Failures (Bonus Exercise)
 
 ## Objective
 In this exercise, we aim to compare the different reasons why a logon - any logon - has failed. These failed events are recorded in the **security audit log**.

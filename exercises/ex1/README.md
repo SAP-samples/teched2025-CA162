@@ -41,13 +41,13 @@ We now create a new Communication System – we’ll call it:
 In the next screen, we need to enter the **Hostname** of the SAC system (sacteched25.eu10.hcs.cloud.sap).  
 We extract just the hostname (not the full URL) from the SAC URL and enter it here.
 
-Also, for security purposes, we enable TLS (1.2 or 1.3), then **Save**.
+Also, for security purposes, we enable TLS (1.2 or 1.3), don't just **Save** yet, but scroll further down for the next step.
 
 ![Alt text](images/host_tls_comm_system.png)
 
 ## Step 1.3: Create a Communication User
 
-Now, we create a new Communication User.  
+Now, we create a new Communication User by scrolling down to where it says **users for inbound communication**. Click on the **+** sign. A new windows pops up. Select **New user**   
 
 ![Alt text](images/new_user_comm_system.png)
 
@@ -76,7 +76,11 @@ Once saved, note the Service URL/Service Interface in "inbound services" - you w
 
 In the SAC tenant, select **Connections** in the side navigation (second-to-last icon at the bottom left), then click **Add Connection** (plus icon).
 
-In the dialog, enter the following information (replace *XY* with your seat number):
+In the first dialog, select OData Services as the data source (normally you would use a direct S/4 connection, but since we have no IAS attached, we need to use this option for the purpose of this workshop)
+
+![Alt text](images/saved_comm_arrangemnet.png)
+
+In the next dialog, enter the following information (replace *XY* with your seat number):
 - Connection Name: S4_XY
 - Data Service URL: the Service URL/Service Interface you have noted in the previous step. 
 - User Name: SAC_XY_USER

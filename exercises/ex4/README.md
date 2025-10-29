@@ -88,7 +88,9 @@ Rename each aggregation for clarity:
 - Aggregation 5: Password check failed
 - Aggregation 6: FailedRFC/CPIC  logons
 
-![Alt text](images/final_visu.png)
+
 
 ## Final Notes
 After renaming and verifying all measures, the bar chart will clearly show the frequency of each failure reason. This provides a visual comparison of logon issues across the selected timeframe.
+
+![Alt text](images/final_visu.png)

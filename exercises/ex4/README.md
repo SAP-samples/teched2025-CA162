@@ -24,7 +24,7 @@ We start by creating a **responsive story** (as in the previous exercise) so it 
 We add a **bar chart** to compare the different logon failure reasons by draging the chart onto the widget area. As before, a new window opens. The dataset is already there, so we select **SecurityAuditLogEvents** from there. 
 
 
-select_sal_events.png
+![Alt text](images/select_sal_events.png)
 ---
 
 ## Implementation Details
@@ -36,7 +36,7 @@ As in the previous exercise, we start with creating a helper measure.
 - Create a helper measure called **Binary Helper** with the value `1`.
 - Confirm and close.
 
-binary_helper.png
+![Alt text](images/binary_helper.png)
 
 ---
 
@@ -45,7 +45,7 @@ We want to see **every failed logon**, and for each failed logon there is a time
 
 - Aggregate our defined **unique values** (timestamps). This gives us all failed logons. However, we want to filter by type of event, hence we select the event message and apply conditions based on **event message text**.
 
-create_aggregation.png
+![Alt text](images/create_aggregation.png)
 
 #### How to Select Conditions:
 - Use **Select by Member** to view available members.
@@ -59,14 +59,14 @@ create_aggregation.png
  
 Note: for those failed logon reasons which have more than one entry, select all! So in this example, our first logon failed member  - reason 1 - select the first two event messages. Confirm with **ok** 
 
-select_members.png
+![Alt text](images/select_members.png)
 ---
 
 ### Step 6: Create Measures for Each Reason
 
 As you can see after having created the first aggregation, this already gives us the number of failed logons with reason 1. For the subsequent calculations, simply hover the mouse over the three dots of the first aggregation and select **duplicate**
 
-duplicate_calc.png
+![Alt text](images/duplicate_calc.png)
 
 The only thing you need to change is the selection of members in the event message text. Edit for:
   - Reason 2
@@ -88,7 +88,7 @@ Rename each aggregation for clarity:
 - Aggregation 5: Password check failed
 - Aggregation 6: FailedRFC/CPIC  logons
 
----
+![Alt text](images/final_visu.png)
 
 ## Final Notes
 After renaming and verifying all measures, the bar chart will clearly show the frequency of each failure reason. This provides a visual comparison of logon issues across the selected timeframe.

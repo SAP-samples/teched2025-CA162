@@ -42,10 +42,15 @@ We now create two bars, with a measure for each bar. To this create a new measur
 #### Bar 1: Users Who Have Never Logged In
 
 - For this first bar, we need a calculation again.
-- We compute an **aggregation**: the **sum** of all **user IDs** for which the following condition holds:
+- We compute an **aggregation**: the **sum** of all **user IDs** for which the following condition holds (The binary helper calculation is automatically applied):
+
   - The user has a value indicating they have never logged in.
-  - This means the `last log on date` has a value of `null`.
-- The binary metric is automatically applied.
+  - This means the `last log on date` has a value of `null`. We find this value by going into **Values or Input Controls** and select **Select by Member**
+ 
+![Alt text](images/select_member.png)
+
+- select **null** from the list of available members
+
 - This gives us the first bar: users who have never logged in.
 
 ![Alt text](images/never_loggedon_users.png) 
@@ -60,6 +65,10 @@ We now create two bars, with a measure for each bar. To this create a new measur
 - This gives us the second bar: users who **have** logged in.
 
 ![Alt text](images/loggedon_users.png)
+
+If you have created your calculations in the **available objects** window, add the two aggregations just created to your bar chart by clicking on the yellow **at least 1 measure required** box.
+
+![Alt text](images/required_measure.png)
 
 ### Step 3.2.3: Label the Metrics
 

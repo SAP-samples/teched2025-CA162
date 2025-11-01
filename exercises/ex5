@@ -1,0 +1,19 @@
+# Exercise 4: Secure Data Deletion
+
+Important for data are retention periods enabled or delete data when they are not necessary anymore. Therfore, the last exercise is about deletion of data arrangements created **S/4HANA**, and data import as well as stories in **SAP Analytics Cloud (SAC)**.
+
+A reason for data deletion are mainly
+- Purpose limitation: Keep data only for the specific purpose it was collected; delete when the purpose ends.
+- Storage limitation and data minimization (e.g., GDPR): Retain no longer than necessary; reduce scope and duration to what’s needed.
+- Accuracy and relevance: Delete outdated or inaccurate data to maintain data quality and fairness. 
+
+Secure deletion of data in **SAC**
+
+The created stories and data sets, will be available in "My Files" (thrid icon on the left side).
+By selecting all stories and data sets those can be deleted with the "trash can"-symbol on the right corner (sixth icon on the right side).
+
+
+
+Confirm the deletion of the data with "ok"
+After the confirmation, the files are permantly deleted.
+

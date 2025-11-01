@@ -35,3 +35,7 @@ Now that we understand what the scope of this hands-on session is, let's check t
 
 1. Search for the internet browser on your computer and navigate to the SAP S/4HANA Cloud Public Edition instance: https://my426786.s4hana.cloud.sap
 2. Afterwards, also sign in to the SAC instance in a second tab: https://sacteched25.eu10.hcs.cloud.sap
+
+Note: Please use for the authenication your the full e-mail address incl. your seat number:
+  ca162-0(SEAT NUMBER)@education.cloud.sap
+  You will get a error message when you do not use the foll e-mail address.

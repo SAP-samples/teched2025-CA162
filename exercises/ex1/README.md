@@ -92,4 +92,4 @@ In the next dialog, enter the following information (replace *XY* with your seat
 
 ## Summary
 
-Now that we have set up the connection between S/4 and SAC, we can move on to [Exercise 2](exercises/ex2/).
+Now that we have set up the connection between S/4 and SAC, we can move on to [Exercise 2](exercises/ex2/README.md).

@@ -42,4 +42,4 @@ Now that we understand what the scope of this hands-on session is, let's check t
 
 ## Summary
 
-After successfully authenticating, we can now start with [Exercise 1](exercises/ex1/).
+After successfully authenticating, we can now start with [Exercise 1](exercises/ex1/README.md).

@@ -88,4 +88,4 @@ After renaming and verifying all measures, the bar chart will clearly show the f
 
 ## Summary
 
-After analyzing the failed logins, we will focus on securely deleting the collected data in the final [Exercise 5](exercises/ex5/).
+After analyzing the failed logins, we will focus on securely deleting the collected data in the final [Exercise 5](exercises/ex5/README.md).

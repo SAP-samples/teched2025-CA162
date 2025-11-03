@@ -2,7 +2,8 @@
 
 Now that we have saved the data from the "Communication User Read" API from the SAP S/4HANA Cloud Public Edition, we want to compare how many users have **never logged in** versus those who **have logged in** at least once.
 
->Please note: The actual question is: _Which communication scenarios have never been used?_ But for the purpose of this exercise, we will simplify the analysis, and assume a **1:1 relationship**: Each **communication user** belongs to exactly **one communication scenario**.   Therefore, any communication user who has **never logged in** represents a **communication scenario that has never been used**.
+> [!NOTE]
+> The actual question is: _Which communication scenarios have never been used?_ But for the purpose of this exercise, we will simplify the analysis, and assume a **1:1 relationship**: Each **communication user** belongs to exactly **one communication scenario**.   Therefore, any communication user who has **never logged in** represents a **communication scenario that has never been used**.
 
 ## Step 3.1: Create a Responsive Story
 
@@ -83,3 +84,7 @@ We should label the metrics appropriately:
 
 - Save the analysis under the name **UnusedUsersXY** (replace *XY* with your seat number).
 - Save and finish.
+
+## Summary
+
+We have successfully visualized the unused communication scenarios; in the Bonus [Exercise 4](exercises/ex4/), we will focus on the Security Audit Log.

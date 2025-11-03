@@ -17,7 +17,8 @@ To do this, the first thing you want to do is look at the API and the informatio
 
 You will notice that the best field to use is based on the user: there is a field called **LastLogonDateTime** - if this is not populated, the user has never logged on, and hence the communication arrangement most likely has never been used. 
 
->**Note**: Of course, someone could have used the connection and changed the user afterwards, which is why you would want to integrate other fields, such as when was the connection last changed, in order to get the real picture, but for the sake of simplicity we will stick to this one field for this exercise. 
+> [!NOTE]
+> Of course, someone could have used the connection and changed the user afterwards, which is why you would want to integrate other fields, such as when was the connection last changed, in order to get the real picture, but for the sake of simplicity we will stick to this one field for this exercise. 
 
 To visualize the unused connections, there are different options as well. For this exercise, we will use a fairly simple visualization: comparing the number of users who have logged on with the number of users who have not logged on yet. 
 
@@ -35,3 +36,10 @@ Now that we understand what the scope of this hands-on session is, let's check t
 
 1. Search for the internet browser on your computer and navigate to the SAP S/4HANA Cloud Public Edition instance: https://my426786.s4hana.cloud.sap
 2. Afterwards, also sign in to the SAC instance in a second tab: https://sacteched25.eu10.hcs.cloud.sap
+
+> [!NOTE]
+> Please use the full email address including your seat number for authentication: ca162-0XY@education.cloud.sap, where *XY* is your seat number.
+
+## Summary
+
+After successfully authenticating, we can now start with [Exercise 1](exercises/ex1/).

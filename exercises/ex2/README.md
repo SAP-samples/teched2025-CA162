@@ -1,4 +1,4 @@
-# Exercise 2: Importing data into a dataset in SAC
+# Exercise 2: Importing data into a Dataset in SAC
 
 ## Step 2.1: Set up data source
 
@@ -12,3 +12,7 @@
 ![Alt text](images/create_dataset_4.png)
 5. Click on **Save** to save the Dataset with name **CommunicationUsersQueryXY** (replace *XY* with your seat number).
 ![Alt text](images/create_dataset_5.png)
+
+## Summary
+
+After setting up a Dataset, we can continue with [Exercise 3](exercises/ex3/).

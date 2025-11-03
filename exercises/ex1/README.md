@@ -55,8 +55,10 @@ In this demo system, we use **Username and Password** authentication. This is no
 
 We create a new user with the User Name **SAC_XY_USER**, where *XY* is your seat number.
 
-We let the system suggest a secure password.  
-Important: we **save the password**, because we’ll need it again later. For example, copy the password into a text file.
+We let the system suggest a secure password.
+
+> [!IMPORTANT]  
+> We **save the password**, because we’ll need it again later. For example, copy the password into a text file.
 
 ![Alt text](images/save_user_pwd_comm_system.png)
 
@@ -87,3 +89,7 @@ In the next dialog, enter the following information (replace *XY* with your seat
 - Password: The password that was saved when the communication arrangement was created
 
 ![Alt text](images/new_odata_connection.png)
+
+## Summary
+
+Now that we have set up the connection between S/4 and SAC, we can move on to [Exercise 2](exercises/ex2/).

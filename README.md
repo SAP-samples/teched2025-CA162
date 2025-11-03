@@ -9,6 +9,8 @@ This repository contains the material for the SAP TechEd 2025 session called **C
 In this workshop, we will take a look at the security relevant APIs and integrate them into SAP Analytics Cloud (SAC) for a simple security use case: _How many of our communication arrangements in our SAP S/4HANA Cloud Public Edition instance have never been used?_
 By the end of the session, you’ll know how to extract, visualize, and analyze key security data using SAP tools.
 
+Additionally, we have prepared a bonus exercise for analyzing failed logons recorded in the Security Audit Log.
+
 ## Requirements
 
 To follow the exercises in this repository, you need access to an SAP S/4HANA Cloud Public Edition system with administrative rights, as well as access to an SAC tenant.
@@ -23,6 +25,10 @@ The exercises are designed to be completed sequentially. Each exercise builds on
 - [Exercise 2: Importing data into a dataset in SAC](exercises/ex2/)
 
 - [Exercise 3: Visualizing unused communication scenarios (users) in SAC](exercises/ex3/)
+
+- [Exercise 4: Analysis of Logon Failures (Bonus Exercise)](exercises/ex4/)
+
+- [Exercise 5: Secure Data Deletion](exercises/ex5/)
   
 
 ## Contributing

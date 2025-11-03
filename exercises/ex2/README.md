@@ -15,4 +15,4 @@
 
 ## Summary
 
-After setting up a Dataset, we can continue with [Exercise 3](exercises/ex3/README.md).
+After setting up a Dataset, we can continue with [Exercise 3](../ex3/).

@@ -87,4 +87,4 @@ We should label the metrics appropriately:
 
 ## Summary
 
-We have successfully visualized the unused communication scenarios; in the Bonus [Exercise 4](exercises/ex4/README.md), we will focus on the Security Audit Log.
+We have successfully visualized the unused communication scenarios; in the Bonus [Exercise 4](../ex4/), we will focus on the Security Audit Log.

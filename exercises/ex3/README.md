@@ -46,11 +46,11 @@ We now create two bars, with a measure for each bar. To this create a new measur
 - We compute an **aggregation**: the **sum** of all **user IDs** for which the following condition holds (The binary helper calculation is automatically applied):
 
   - The user has a value indicating they have never logged in.
-  - This means the `last log on date` has a value of `null`. We find this value by going into **Values or Input Controls** and select **Select by Member**
+  - This means the `LASTLOGONDATETIME` has a value of `null`. We find this value by going into **Values or Input Controls** and select **Select by Member**
  
 ![Alt text](images/select_member.png)
 
-- select **null** from the list of available members
+- Select `null` from the list of available members
 
 ![Alt text](images/never_loggedon_users.png) 
 
@@ -62,7 +62,7 @@ We now create two bars, with a measure for each bar. To this create a new measur
 - Again, we compute an aggregation: the sum of all user IDs.
 - This time, the condition is the opposite:
   - The user does **not** have measure values for the condition.
-  - The condition remains the same: `last log on date = 0`.
+  - The condition remains the same: `LASTLOGONDATETIME = null`.
 - This gives us the second bar: users who **have** logged in.
 
 ![Alt text](images/loggedon_users.png)
@@ -75,8 +75,8 @@ If you have created your calculations in the **available objects** window, add t
 
 We should label the metrics appropriately:
 
-- Aggregation 1: `Users without log on date`
-- Aggregation 2: `Users with log on date`
+- Aggregation 1: `Users never logged on`
+- Aggregation 2: `Users with logon date`
 
 ![Alt text](images/save_story.png)
 

@@ -22,7 +22,6 @@ We add a **bar chart** to compare the different logon failure reasons by draging
 ![Alt text](images/select_sal_events.png)
 
 ## Step 4.3.: Create a Helper Measure
-## Step 4.3.: Create a Helper Measure
 
 As in the previous exercise, we start by creating a helper measure:
 - Go to **Available Objects** and add a new **Calculation**.
@@ -33,8 +32,7 @@ As in the previous exercise, we start by creating a helper measure:
 
 ![Alt text](images/binary_helper.png)
 
-## Step 4.4.: Configure the Bar Chart
-We want to see every failed logon, and for each failed logon there is a timestamp event. Hence, we're using the timestamp to count our failed logons. For this, we create a new calculation and choose **Aggregation**:
+
 ## Step 4.4.: Configure the Bar Chart
 We want to see every failed logon, and for each failed logon there is a timestamp event. Hence, we're using the timestamp to count our failed logons. For this, we create a new calculation and choose **Aggregation**:
 
@@ -43,17 +41,13 @@ We want to see every failed logon, and for each failed logon there is a timestam
 ![Alt text](images/create_aggregation.png)
 - Use **Select by Member** to view available members.
 ![Alt text](images/conditions.png)
-- Identify all entries with "reason = 1". Confirm with **OK**.
-![Alt text](images/conditions.png)
+
 - Identify all entries with "reason = 1". Confirm with **OK**.
 ![Alt text](images/select_members.png)
 
 Then, in the "Measures" section of the right-hand side panel, select the aggregation you just created.
 ![Alt text](images/panel.png)
 
-## Step 4.5.: Create Measures for Each Reason
-Then, in the "Measures" section of the right-hand side panel, select the aggregation you just created.
-![Alt text](images/panel.png)
 
 ## Step 4.5.: Create Measures for Each Reason
 

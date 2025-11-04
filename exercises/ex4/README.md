@@ -26,8 +26,6 @@ We add a **bar chart** to compare the different logon failure reasons by draging
 As in the previous exercise, we start by creating a helper measure:
 - Go to **Available Objects** and add a new **Calculation**.
 - Create a helper measure called **binary_helper** with the value `1`.
-- Go to **Available Objects** and add a new **Calculation**.
-- Create a helper measure called **binary_helper** with the value `1`.
 - Confirm and close.
 
 ![Alt text](images/binary_helper.png)
@@ -36,7 +34,6 @@ As in the previous exercise, we start by creating a helper measure:
 ## Step 4.4.: Configure the Bar Chart
 We want to see every failed logon, and for each failed logon there is a timestamp event. Hence, we're using the timestamp to count our failed logons. For this, we create a new calculation and choose **Aggregation**:
 
-- Aggregate our defined **unique values** (timestamps). This gives us all failed logons. However, we want to filter by type of event, so we select the event message and apply conditions based on **Event Message Text**.
 - Aggregate our defined **unique values** (timestamps). This gives us all failed logons. However, we want to filter by type of event, so we select the event message and apply conditions based on **Event Message Text**.
 ![Alt text](images/create_aggregation.png)
 - Use **Select by Member** to view available members.
@@ -55,7 +52,6 @@ As you can see after having created the first aggregation, this already gives us
 
 ![Alt text](images/duplicate_calc.png)
 
-The only change needed is the selection of members in the **Event Message Text**. Edit for:
 The only change needed is the selection of members in the **Event Message Text**. Edit for:
   - Reason 2
   - Reason 52

@@ -78,9 +78,7 @@ Once saved, note the Service URL/Service Interface in "inbound services" - you w
 
 In the SAC tenant, select **Connections** in the side navigation (second-to-last icon at the bottom left), then click **Add Connection** (plus icon).
 
-In the first dialog, select OData Services as the data source (normally you would use a direct S/4 connection, but since we have no IAS attached, we need to use this option for the purpose of this workshop)
-
-![Alt text](images/saved_comm_arrangemnet.png)
+In the first dialog, select OData Services as the data source (normally you would use a direct S/4 connection, but since we have no IAS attached, we need to use this option for the purpose of this workshop).
 
 In the next dialog, enter the following information (replace *XY* with your seat number):
 - Connection Name: S4_XY
